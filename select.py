@@ -170,7 +170,7 @@ def rec(m,n,k,beg,end,index,inputFiles):
         return sorted(karr)[k]
 
 
-    #4 Base Case for recursion
+    #1 Recursion case: makes the end index much smaller
     elif (L > k):
         print "L > K"
         for i in range(m):
@@ -181,7 +181,7 @@ def rec(m,n,k,beg,end,index,inputFiles):
         return rec(m,n,k,beg,end,index,inputFiles)
 
 
-    #5 Base Case for recursion
+    #2 Recursion case: make k smaller and move the beg index
     elif (L < k):
         print "L < K"
         for i in range(m):
